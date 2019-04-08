@@ -1,0 +1,46 @@
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css">
+
+    <title>JavaScript Randomp Equation Game</title>
+    </head>
+    <body>
+    	<div class="container">
+    		<header>
+    			<hr>
+    			<h1> JavaScript Random Equation Game </h1>
+    			<hr>
+    		</header>
+    		<section id="message"></section>
+    		<section>
+    			<h2>The Best Equation Game !!!</h2>
+    			<p> 
+    				please solve the <span id="equation">equation</span>
+    			</p>
+    			<div class="row">
+		          <div class="col-sm-8">
+		            <h2>Equation is:</h2>
+		            <input id="EquationInput" placeholder="x+y">
+		            <button id="guessBtn">Show Equation</button>
+		          </div>
+		    	<div class="row">
+		          <div class="col-sm-9">
+		            <h2>Answer:</h2>
+		            <input id="guessInput" step="1" placeholder="100000">
+		            <button id="guessBtn">Answer</button>
+		          </div>
+
+		          <div class="col-sm-3">
+		            <h2>Scoreboard:</h2>
+		            <div id="score">0</div>
+		            <small>You have <span id="Try">3</span> try to get the right answer. The try remain
+		          </div>
+		        </div>
+    		</section>
+    	</div>
+    </body>
