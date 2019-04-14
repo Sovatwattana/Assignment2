@@ -4,10 +4,10 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
    
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha
+ <!––    link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha -->
     <link rel="stylesheet" type="text/css" media="screen" href="styles.css">
 
-    <title>JavaScript Randomp Equation Game</title>
+    <title>JavaScript Random Equation Game</title>
     </head>
     <body>
     	<div class="container">
@@ -25,13 +25,14 @@
     			<div class="row">
 		          <div class="col-sm-8">
 		            <h2>Equation is:</h2>
-		            <input id="EquationInput" placeholder="x+y">
-		            <button id="guessBtn">Show Equation</button>
+		            <input style="height: 70px;font-size:14pt;" id="EquationInput" placeholder="x+y">
+		            <button id="showEquationBtn">Show Equation</button>
+                    <button id="SkipBtn">Skip</button>
 		          </div>
 		    	<div class="row">
 		          <div class="col-sm-9">
 		            <h2>Answer:</h2>
-		            <input id="guessInput" step="1" placeholder="100000">
+		            <input style="height:70px;font-size:14pt;" id="guessInput" step="1" placeholder="100000">
 		            <button id="guessBtn">Answer</button>
 		          </div>
 
