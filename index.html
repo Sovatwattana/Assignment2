@@ -1,47 +1,46 @@
-<head>
+<!DOCTYPE html>
+<html>
+  <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
-   
- <!––    link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha -->
     <link rel="stylesheet" type="text/css" media="screen" href="styles.css">
+    <title>JavaScript Math Quiz</title>
+  </head>
+  <body>
+    <div class="container">
+    <header>
+       <hr>
+       <h1 style="font-size: 400%">Random Math Quiz</h1>
+       <hr>
+    </header>
+        <section id="message"></section>
 
-    <title>JavaScript Random Equation Game</title>
-    </head>
-    <body>
-    	<div class="container">
-    		<header>
-    			<hr>
-    			<h1> JavaScript Random Equation Game </h1>
-    			<hr>
-    		</header>
-    		<section id="message"></section>
-    		<section>
-    			<h2>The Best Equation Game !!!</h2>
-    			<p> 
-    				please solve the <span id="equation">equation</span>
-    			</p>
-    			<div class="row">
-		          <div class="col-sm-8">
-		            <h2>Equation is:</h2>
-		            <input style="height: 70px;font-size:14pt;" id="EquationInput" placeholder="x+y">
-		            <button id="showEquationBtn">Show Equation</button>
-                    <button id="SkipBtn">Skip</button>
-		          </div>
-		    	<div class="row">
-		          <div class="col-sm-9">
-		            <h2>Answer:</h2>
-		            <input style="height:70px;font-size:14pt;" id="guessInput" step="1" placeholder="100000">
-		            <button id="guessBtn">Answer</button>
-		          </div>
+      <section>
+        <h2> Awesome  Math quiz Game!!!</h2>
 
-		          <div class="col-sm-3">
-		            <h2>Scoreboard:</h2>
-		            <div id="score">0</div>
-		            <small>You have <span id="Try">3</span> try to get the right answer. The try remain
-		          </div>
-		        </div>
-    		</section>
-    	</div>
+        <p>
+          Please Answer the following question:
+        </p>
+        <div class="row">
+        <div class="col-sm-9">
+          <div>
+           <h2>Question:</h2> <span id="num1" style="width: 250px; height: 40px; font-size: 32px;">12</span> <span id="operator" style="width: 250px; height: 40px; font-size: 32px;"></span> <span id="num2" style="width: 250px; height: 40px; font-size: 32px;">12</span>
+          </div>
+        <input type="text" id="answer" style="width: 250px; height: 40px; font-size: 32px;">
+         <button onclick="operatorFunc(rndOperator);">Answer</button>
+         <button onclick="skipFunc();">Skip</button>
+
+         <div class="col-sm-3">
+            <h2>Your Score Is</h2>
+            <div id="score"></div> 
+            <h6 id="message"></h6>
+          </div>
+        </div>
+      </section>
+    </div>
     </body>
+</html>
+
+<script src="main.js"></script>
+
