@@ -3,7 +3,7 @@ var num1 = document.querySelector("#num1");
 var num2 = document.querySelector("#num2");
 var operator = document.querySelector("#operator");
 function numx(){
-  let x = Math.floor((Math.random() * 1000) + 1);
+  let x = Math.floor((Math.random() * 100) + 1);
   num1.innerHTML = x;
   return x;
 }
